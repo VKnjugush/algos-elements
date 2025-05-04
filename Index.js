@@ -1,15 +1,17 @@
 // This program reads a sentence character by character until a period ('.') is found.
+// It then analyzes the sentence to find the length, number of words, and number of vowels.
+
 // Function to analyze a sentence
 function analyzeSentence(sentence) {
     // Length of the sentence (number of characters including the period)
     const length = sentence.length;
   
-    // Number of words (assuming words are separated by single spaces)
+    // Number of words-assuming words are separated by single spaces.
     // Trim to remove leading/trailing spaces, then split by space, filter empty strings
     const wordsArr = sentence.trim().split(' ').filter(word => word !== '');
     const wordCount = wordsArr.length;
   
-    // Number of vowels (case insensitive)
+    // Number of vowels 
     const vowels = 'aeiouAEIOU';
     let vowelCount = 0;
   
