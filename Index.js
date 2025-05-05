@@ -43,14 +43,14 @@ function analyzeSentence(sentence) {
   function readSentence() {
     let sentence = '';
   
-    // Set stdin to raw mode to read one character at a time
+    // raw mode to read one character 
     process.stdin.setRawMode(true);
   
     process.stdin.on('data', (chunk) => {
       const char = chunk.toString();
   
       // Append character to sentence
-      sentence += char;
+      // sentence += char;
   
       process.stdout.write(char);
   
